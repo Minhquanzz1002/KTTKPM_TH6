@@ -1,4 +1,7 @@
 # KIẾN TRÚC THIẾT KẾ PHẦN MỀM THỰC HÀNH 6
+* Thực hành lưu dữ liệu vào Redis
+* Thực hành microservice
+* Cài đặt Docker
 ## List request
 1. Register
 ```
