@@ -12,7 +12,6 @@ curl --location 'http://localhost:8080/api/account/register' \
     "password": "minhquan"
 }'
 ```
-[View Full Image](https://raw.githubusercontent.com/Minhquanzz1002/KTTKPM_TH6/main/demo/register.png)
 ![Register](https://raw.githubusercontent.com/Minhquanzz1002/KTTKPM_TH6/main/demo/register.png)
 
 2. Login
@@ -24,5 +23,7 @@ curl --location 'http://localhost:8080/api/account/login' \
     "password": "minhquan"
 }'
 ```
-[View Full Image](https://raw.githubusercontent.com/Minhquanzz1002/KTTKPM_TH6/main/demo/login.png)
 ![Login](https://raw.githubusercontent.com/Minhquanzz1002/KTTKPM_TH6/main/demo/login.png)
+
+## Install Docker
+![Docker](https://raw.githubusercontent.com/Minhquanzz1002/KTTKPM_TH6/main/demo/install-docker.png)
