@@ -16,12 +16,15 @@ public class AccountServiceImpl implements AccountService {
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
-    public Account save(Account account) {
+    public boolean login(Account account) {
         Optional<Account> optionalAccount = accountRepository.findByUsername(account.getUsername());
-        if (optionalAccount.isPresent()) {
-            return null;
+        if (optionalAccount.isEmpty()) {
+            return false;
         }
-        account.setPassword(bCryptPasswordEncoder.encode(account.getPassword()));
-        return accountRepository.save(account);
+        Account _account = optionalAccount.get();
+        if (bCryptPasswordEncoder.matches(account.getPassword(), _account.getPassword())) {
+            return true;
+        }
+        return false;
     }
 }
